@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
+	
+	<welcome-file-list>
+		<welcome-file>login.jsp</welcome-file>
+		<welcome-file>app/index.jsp</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>com.idle.servlet.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/LoginServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>LoginServletA</servlet-name>
+		<servlet-class>com.idle.servlet.LoginServletA</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginServletA</servlet-name>
+		<url-pattern>/LoginServletA</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>UserServlet</servlet-name>
+		<servlet-class>com.idle.servlet.UsersServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserServlet</servlet-name>
+		<url-pattern>/UserServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ExpressServlet</servlet-name>
+		<servlet-class>com.idle.servlet.ExpressServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ExpressServlet</servlet-name>
+		<url-pattern>/ExpressServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>NoteServlet</servlet-name>
+		<servlet-class>com.idle.servlet.NoteServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>NoteServlet</servlet-name>
+		<url-pattern>/NoteServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>OrderServlet</servlet-name>
+		<servlet-class>com.idle.servlet.OrderServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>OrderServlet</servlet-name>
+		<url-pattern>/OrderServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ProductsServlet</servlet-name>
+		<servlet-class>com.idle.servlet.ProductsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProductsServlet</servlet-name>
+		<url-pattern>/ProductsServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ReplyServlet</servlet-name>
+		<servlet-class>com.idle.servlet.ReplyServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ReplyServlet</servlet-name>
+		<url-pattern>/ReplyServlet</url-pattern>
+	</servlet-mapping>
+
+</web-app>
